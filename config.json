@@ -1,15 +1,17 @@
 {
+  "urls": [
+    {
+      "name": "主配置",
+      "url": "https://raw.githubusercontent.com/你的用户名/tv-sources/main/tvbox.json"
+    }
+  ],
   "lives": [
     {
-      "name": "我的直播",
+      "name": "直播",
       "list": [
         {
           "name": "CCTV1高清",
           "url": "http://115.150.63.77:85/tsfile/live/0001_2.m3u8?key=txiptv&playlive=1&authid=0"
-        },
-        {
-          "name": "CCTV1标清",
-          "url": "http://115.150.63.77:85/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0"
         }
       ]
     }
