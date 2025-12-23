@@ -1,21 +1,65 @@
 {
+  "urls": [
+    {
+      "name": "主配置",
+      "url": "https://your-config.com/tvbox.json"
+    },
+    {
+      "name": "备用配置",
+      "url": "https://backup.com/config.json"
+    }
+  ],
   "lives": [
     {
-      "group": "央视",
-      "channels": [
+      "name": "📡 直播频道",
+      "list": [
         {
-          "name": "CCTV1高清",
-          "urls": [
-            "http://115.150.63.77:85/tsfile/live/0001_2.m3u8?key=txiptv&playlive=1&authid=0"
-          ]
+          "name": "CCTV-1 高清",
+          "url": "http://115.150.63.77:85/tsfile/live/0001_2.m3u8?key=txiptv&playlive=1&authid=0",
+          "logo": "https://example.com/cctv1.png",
+          "group": "央视",
+          "epg": "CCTV1"
         },
         {
-          "name": "CCTV1标清",
-          "urls": [
-            "http://115.150.63.77:85/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0"
-          ]
+          "name": "CCTV-1 标清",
+          "url": "http://115.150.63.77:85/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0",
+          "logo": "https://example.com/cctv1.png",
+          "group": "央视",
+          "epg": "CCTV1"
         }
       ]
     }
-  ]
+  ],
+  "parses": [
+    {
+      "name": "JiaoLong",
+      "type": 1,
+      "url": "https://json.ecso.workers.dev",
+      "ext": {
+        "flag": ["🈯"],
+        "header": {
+          "User-Agent": "Mozilla/5.0"
+        }
+      }
+    }
+  ],
+  "flags": [
+    "🇨🇳"
+  ],
+  "ijk": [
+    {
+      "group": "软解码",
+      "options": ""
+    }
+  ],
+  "settings": {
+    "version": 20240115,
+    "homeRecommend": true,
+    "homeHistory": true,
+    "sourceMode": 1,
+    "scale": 0,
+    "doh": 1,
+    "backgroundColor": "#000000",
+    "searchFlag": true
+  }
 }
